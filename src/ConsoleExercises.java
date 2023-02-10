@@ -34,11 +34,17 @@ public class ConsoleExercises {
         System.out.println("The perimeter is " + ((width * 2) + (length * 2)) + " linear feet.");
         System.out.println("The volume is " + ((length * width *  height)/27) + " cubic yards.");
 
-//
-//        String all = "l 10 w 20 h 12";
-//        Scanner sa = new Scanner(all);
-//        sa.useDelimiter("\n");
-//        System.out.println(((sa.hasNextInt() * 2) + (sa.hasNextInt() * 2) + (sa.hasNextInt() * 0)));
+
+
+        Scanner sb = new Scanner(System.in);
+        sb.useDelimiter("\n");
+        int area = length * width;
+        int perimeter = (length * 2) + (width * 2);
+        int volume = (length * width * height)/27;
+        System.out.printf("The area is %s square feet.",area);
+        System.out.printf("The perimeter is %s linear feet.",perimeter);
+        System.out.printf("The volume is %s cubic yards.",volume);
+
     }
 }
 
