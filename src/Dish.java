@@ -6,9 +6,7 @@ public class Dish {
    public void printSummary(){
    System.out.printf("Cost: %s\n Name: %s\n Recommended: %s\n",costInCents,nameOfDish,wouldRecommend);
 }
-
-
-    public static void main(String[] args) {
+    public void main(String[] args) {
 
     }
 }
