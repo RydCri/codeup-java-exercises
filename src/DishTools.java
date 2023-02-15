@@ -26,20 +26,22 @@ public class DishTools {
 
     public static void main(String[] args) {
 
-        Dish dish3 = new Dish();
-        dish3.nameOfDish = "Macaroni";
-        dish3.costInCents = 1189;
-        dish3.wouldRecommend = true;
-      DishTools.shoutDishName(dish3.nameOfDish);
-      DishTools.analyzeDishCost(dish3.costInCents);
-      DishTools.flipRecommendation(dish3.wouldRecommend);
+        System.out.println("|====Dishes====|\n");
 
-            Dish dish4 = new Dish();
-            dish4.nameOfDish = "Zuccatii";
-            dish4.costInCents = 2411;
-            dish4.wouldRecommend = false;
-        DishTools.shoutDishName(dish4.nameOfDish);
-        DishTools.analyzeDishCost(dish4.costInCents);
-        DishTools.flipRecommendation(dish3.wouldRecommend);
+        Dish dish3 = new Dish();
+        dish3.makeDish("Macaroni",1189,true);
+        dish3.printSummary();
+
+//      DishTools.shoutDishName(dish3.nameOfDish);
+//      DishTools.analyzeDishCost(dish3.costInCents);
+//      DishTools.flipRecommendation(dish3.wouldRecommend);
+
+        Dish dish4 = new Dish();
+        dish4.makeDish("Zuccatii",2411,false);
+        dish4.printSummary();
+
+//        DishTools.shoutDishName(dish4.nameOfDish);
+//        DishTools.analyzeDishCost(dish4.costInCents);
+//        DishTools.flipRecommendation(dish3.wouldRecommend);
     }
 }
