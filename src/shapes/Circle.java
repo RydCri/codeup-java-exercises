@@ -7,12 +7,14 @@ public class Circle {
     private double area;
     private double circumference;
     private String input;
+    private int count = 0;
     private static double pi = Math.PI;
         Scanner sc = new Scanner(System.in);
         Scanner cs = new Scanner(System.in);
 
     public Circle() {
         System.out.println("A circle has been instanced!");
+        count +=1;
     }
     public void getRadius() {
         System.out.println("Enter the radius of the circle");
@@ -40,6 +42,7 @@ public class Circle {
             this.getRadius();
             this.getArea();
             this.getCircumference();
+            count +=1;
             System.out.println("\n=============\n");
             System.out.println("Create another Circle? yes/no");
             this.input = cs.nextLine();
@@ -48,9 +51,8 @@ public class Circle {
             } else if (this.input.matches("(?i)n|no|false")) {
                 this.input = String.valueOf(false);
             }
-                System.out.println("\nNo more circles!");
-
-        }
+                System.out.println("\nCicles created: " + count);
+    }
 
 
 
