@@ -14,7 +14,7 @@ public class Scanner {
     public void getString() {
         System.out.println("Enter a string:");
         this.input = System.console().readLine();
-        System.out.println("\nString value: " + input);
+        System.out.println("\nString value: " + input + "\n=============");
     }
 
     public void yesNo() {
@@ -27,7 +27,7 @@ public class Scanner {
         } else {
             this.bool = null;
         }
-        System.out.println("\nBoolean is " + bool);
+        System.out.println("\nBoolean is " + bool + "\n=============");
     }
 
     public void getInt(int min, int max) {
@@ -37,7 +37,7 @@ public class Scanner {
             System.out.println("Nope, try again");
             this.integer = Integer.parseInt(System.console().readLine());
         }
-        System.out.println("Thank you");
+        System.out.println("Thank you"  + "\n=============");
     }
 
 
@@ -48,7 +48,7 @@ public class Scanner {
             System.out.println("Nope, try again");
             this.dbl = Double.parseDouble(System.console().readLine());
         }
-        System.out.println("Thank you");
+        System.out.println("Thank you" + "\n=============" + "\nEnd of input" + "\n=============");
         }
 
 
