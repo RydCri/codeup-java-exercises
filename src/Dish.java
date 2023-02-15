@@ -3,6 +3,7 @@ public class Dish {
     private int costInCents;
     private boolean wouldRecommend;
 public void makeDish(String nameOfDish, int costInCents, boolean wouldRecommend) {
+
     this.nameOfDish = nameOfDish;
     this.costInCents = costInCents;
     this.wouldRecommend = wouldRecommend;
