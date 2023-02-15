@@ -14,7 +14,7 @@ public class Scanner {
     public void getString() {
         System.out.println("Enter a string:");
         this.input = System.console().readLine();
-        System.out.println(input.toString());
+        System.out.println("\nString value: " + input);
     }
 
     public void yesNo() {
@@ -24,8 +24,10 @@ public class Scanner {
             this.bool = String.valueOf(true);
         } else if (this.bool.matches("(?i)n|no|false")) {
             this.bool = String.valueOf(false);
+        } else {
+            this.bool = null;
         }
-        System.out.println(bool);
+        System.out.println("\nBoolean is " + bool);
     }
 
     public void getInt(int min, int max) {
