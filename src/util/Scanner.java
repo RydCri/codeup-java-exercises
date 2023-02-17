@@ -31,7 +31,7 @@ public class Scanner {
     }
 
     public void getInt(int min, int max) {
-        System.out.println("Enter an number between 1 and 10,\n I'll keep asking until you do.");
+        System.out.println("Enter a number between 1 and 10,\n I'll keep asking until you do.");
         this.integer = Integer.parseInt(System.console().readLine());
         while (this.integer < min || this.integer > max) {
             System.out.println("Nope, try again");
@@ -45,7 +45,7 @@ public class Scanner {
         System.out.println("Enter a double between 1.00001 and 1.99999,\n Again, I'll keep asking.");
         this.dbl = Double.parseDouble(System.console().readLine());
         while (this.dbl < min || this.dbl > max) {
-            System.out.println("Nope, try again");
+            System.out.println("Nope, try again\n");
             this.dbl = Double.parseDouble(System.console().readLine());
         }
         System.out.println("Thank you" + "\n=============" + "\nEnd of input" + "\n=============");
