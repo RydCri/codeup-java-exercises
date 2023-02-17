@@ -3,7 +3,6 @@ package shapes;
 class Rectangle {
     protected int length;
     protected int width;
-   protected int sides;
     public int area;
     public int perimeter;
 public Rectangle(int length,int width){
