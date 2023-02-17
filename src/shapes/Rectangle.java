@@ -11,7 +11,7 @@ public Rectangle(int length,int width){
 }
 public void getArea(){
     this.area = this.width * this.length;
-        System.out.println("Area:\t" + area+"\n");
+        System.out.println("Area:\t" + area + "\n");
     }
     public void getPerimeter(){
         this.perimeter = (this.width * 2) + (this.length * 2);
