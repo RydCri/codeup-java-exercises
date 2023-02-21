@@ -1,6 +1,5 @@
 package shapes;
-    public class Square extends Rectangle {
-
+    public class Square extends Quadrilateral implements Measurable{
         public Square(int sides) {
             super(sides,sides);
         }
@@ -15,7 +14,6 @@ package shapes;
 //                System.out.println(length * 4);
 //            }
         public static void main(String[] args) {
-
         }
     }
 
