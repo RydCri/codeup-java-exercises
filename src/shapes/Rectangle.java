@@ -2,8 +2,6 @@ package shapes;
 
 
 class Rectangle extends Quadrilateral {
-public int length;
-public int width;
     public Rectangle(int length, int width){
         super(length,width);
     }
@@ -24,7 +22,6 @@ public int width;
 //        System.out.printf("Rectangle length: %d, width: %d\n",length,width);
 //    }
 //    }
-
     public static void main(String[] args) {
     }
 }
